@@ -81,6 +81,8 @@ public class CafeteriaPOS {
 	private JTextField amountPaid;
 	private JTextField totalPrice;
 	private JTextField change;
+	private JTextField name;
+	private JTextField id;
 	private void initialize() {
 		frmEisCafeteriaPos = new JFrame();
 		frmEisCafeteriaPos.setTitle("EIS Cafeteria POS");
@@ -142,7 +144,7 @@ public class CafeteriaPOS {
 					     
 					}
 					total += price.get(btnNewButton_1.getText());
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					totalPrice.setText(String.valueOf(total));
 					
@@ -159,7 +161,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));			  
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(btnNewButton_1.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -185,7 +187,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -203,7 +205,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -229,7 +231,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_3.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -247,7 +249,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_3.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -273,7 +275,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -291,7 +293,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -317,7 +319,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -334,7 +336,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -360,7 +362,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_6.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -378,7 +380,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_6.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -404,7 +406,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_7.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -422,7 +424,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_7.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -448,7 +450,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_8.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -466,7 +468,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_8.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -492,7 +494,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_9.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -510,7 +512,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_9.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -536,7 +538,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_10.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -554,7 +556,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_10.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -580,7 +582,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_11.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -598,7 +600,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_11.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -624,7 +626,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_12.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -642,7 +644,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_12.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -668,7 +670,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_13.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -686,7 +688,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_13.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -712,7 +714,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_14.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -730,7 +732,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_14.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -756,7 +758,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_15.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -774,7 +776,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_15.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -800,7 +802,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_16.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -818,7 +820,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_16.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -844,7 +846,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_17.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -861,7 +863,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_17.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -887,7 +889,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_18.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -905,7 +907,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_18.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -931,7 +933,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_19.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -948,7 +950,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_19.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -974,7 +976,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_20.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -992,7 +994,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_20.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1018,7 +1020,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_21.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1036,7 +1038,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_21.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1062,7 +1064,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_22.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1080,7 +1082,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_22.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1106,7 +1108,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_23.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1124,7 +1126,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_23.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1150,7 +1152,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_24.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1168,7 +1170,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_24.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1194,7 +1196,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_25.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1212,7 +1214,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_25.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1238,7 +1240,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_26.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1256,7 +1258,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_26.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1282,7 +1284,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_27.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1300,7 +1302,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_27.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1326,7 +1328,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_28.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1344,7 +1346,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_28.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1370,7 +1372,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_29.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1388,7 +1390,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_29.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1414,7 +1416,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_30.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1432,7 +1434,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_30.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1458,7 +1460,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_31.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1476,7 +1478,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_31.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1502,7 +1504,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_32.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1520,7 +1522,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_32.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1546,7 +1548,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_33.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1564,7 +1566,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_33.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1590,7 +1592,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_34.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1608,7 +1610,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_34.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1643,7 +1645,7 @@ public class CafeteriaPOS {
 					     
 					}
 					total += price.get(btnNewButton_1_1.getText());
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					totalPrice.setText(String.valueOf(total));
 					
@@ -1660,7 +1662,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));			  
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(btnNewButton_1_1.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1686,7 +1688,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_2.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1704,7 +1706,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_2.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1730,7 +1732,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_3.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1748,7 +1750,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_3.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1774,7 +1776,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_4.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1792,7 +1794,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_4.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1818,7 +1820,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_5.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1835,7 +1837,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_5.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1861,7 +1863,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_6.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1879,7 +1881,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_6.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1905,7 +1907,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_7.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1923,7 +1925,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_7.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1949,7 +1951,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_8.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1967,7 +1969,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_8.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -1993,7 +1995,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_9.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2011,7 +2013,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_9.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2037,7 +2039,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_10.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2055,7 +2057,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_10.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2081,7 +2083,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_11.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2099,7 +2101,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_11.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2125,7 +2127,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_12.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2143,7 +2145,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_12.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2169,7 +2171,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_13.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2187,7 +2189,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_13.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2213,7 +2215,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_14.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2231,7 +2233,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_14.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2257,7 +2259,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_15.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2275,7 +2277,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_15.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2301,7 +2303,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_16.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2319,7 +2321,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_16.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2345,7 +2347,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_17.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2362,7 +2364,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_17.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2388,7 +2390,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_18.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2406,7 +2408,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_18.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2432,7 +2434,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_19.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2449,7 +2451,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_19.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2475,7 +2477,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_20.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2493,7 +2495,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_20.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2519,7 +2521,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_21.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2537,7 +2539,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_21.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2563,7 +2565,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_22.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2581,7 +2583,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_22.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2607,7 +2609,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_23.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2625,7 +2627,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_23.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2651,7 +2653,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_24.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2669,7 +2671,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_24.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2695,7 +2697,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_25.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2713,7 +2715,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_25.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2739,7 +2741,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_26.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2757,7 +2759,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_26.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2783,7 +2785,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_27.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2801,7 +2803,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_27.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2837,7 +2839,7 @@ public class CafeteriaPOS {
 					     
 					}
 					total += price.get(btnNewButton_2_1.getText());
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					totalPrice.setText(String.valueOf(total));
 					
@@ -2854,7 +2856,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));			  
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(btnNewButton_2_1.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2880,7 +2882,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_2.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2898,7 +2900,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_2.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2924,7 +2926,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_3.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2942,7 +2944,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_1_3.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2968,7 +2970,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_4.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -2986,7 +2988,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_4.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3012,7 +3014,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_5.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3029,7 +3031,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_5.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3055,7 +3057,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_6.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3073,7 +3075,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_6.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3099,7 +3101,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_7.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3117,7 +3119,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_7.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3143,7 +3145,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_8.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3161,7 +3163,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_8.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3187,7 +3189,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_9.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3205,7 +3207,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_9.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3231,7 +3233,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_10.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3249,7 +3251,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_10.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3275,7 +3277,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_11.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3293,7 +3295,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_11.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3319,7 +3321,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_12.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3337,7 +3339,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_12.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3363,7 +3365,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_13.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3381,7 +3383,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_13.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3407,7 +3409,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_14.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3425,7 +3427,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_14.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3451,7 +3453,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_15.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3469,7 +3471,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_15.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3495,7 +3497,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_16.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3513,7 +3515,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_16.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3539,7 +3541,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_17.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3556,7 +3558,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_17.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3582,7 +3584,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_18.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3600,7 +3602,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_18.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3626,7 +3628,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_19.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3643,7 +3645,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_19.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3669,7 +3671,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_20.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3687,7 +3689,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_20.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3713,7 +3715,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_21.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3731,7 +3733,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_21.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3757,7 +3759,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_22.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3775,7 +3777,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_22.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3801,7 +3803,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_23.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3819,7 +3821,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_23.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3845,7 +3847,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_24.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3863,7 +3865,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_24.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3889,7 +3891,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_25.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3907,7 +3909,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_2_25.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3942,7 +3944,7 @@ public class CafeteriaPOS {
 					     
 					}
 					total += price.get(btnNewButton_3_1.getText());
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					totalPrice.setText(String.valueOf(total));
 					
@@ -3959,7 +3961,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));			  
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(btnNewButton_3_1.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -3985,7 +3987,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_3_2.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4003,7 +4005,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_3_2.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4029,7 +4031,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_3_3.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4047,7 +4049,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_3_3.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4073,7 +4075,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_3_4.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4091,7 +4093,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_3_4.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4117,7 +4119,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_3_5.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4134,7 +4136,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_3_5.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4160,7 +4162,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_3_6.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4178,7 +4180,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_3_6.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4213,7 +4215,7 @@ public class CafeteriaPOS {
 					     
 					}
 					total += price.get(btnNewButton_4_1.getText());
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					totalPrice.setText(String.valueOf(total));
 					
@@ -4230,7 +4232,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));			  
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(btnNewButton_4_1.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4256,7 +4258,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_2.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4274,7 +4276,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_2.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4300,7 +4302,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_3.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4318,7 +4320,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_3.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4344,7 +4346,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_4.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4362,7 +4364,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_4.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4388,7 +4390,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_5.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4405,7 +4407,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_5.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4431,7 +4433,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_6.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4449,7 +4451,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_6.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4475,7 +4477,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_7.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4493,7 +4495,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_7.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4519,7 +4521,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_8.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4537,7 +4539,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_8.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4563,7 +4565,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_9.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4581,7 +4583,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_9.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4607,7 +4609,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_10.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4625,7 +4627,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_10.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4651,7 +4653,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_11.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4669,7 +4671,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_11.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4695,7 +4697,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_12.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4713,7 +4715,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_12.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4739,7 +4741,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_13.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4757,7 +4759,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_13.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4783,7 +4785,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_14.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4801,7 +4803,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_14.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4827,7 +4829,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_15.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4845,7 +4847,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_15.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4871,7 +4873,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_16.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4889,7 +4891,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_16.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4915,7 +4917,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_17.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4932,7 +4934,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_17.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4958,7 +4960,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_18.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -4976,7 +4978,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_18.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5002,7 +5004,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_19.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5019,7 +5021,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_19.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5045,7 +5047,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_20.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5063,7 +5065,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_20.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5089,7 +5091,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_21.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5107,7 +5109,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_21.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5133,7 +5135,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_22.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5151,7 +5153,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_22.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5177,7 +5179,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_23.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5195,7 +5197,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_23.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5221,7 +5223,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_24.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5239,7 +5241,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_24.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5265,7 +5267,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_25.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5283,7 +5285,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_25.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5309,7 +5311,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_26.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5327,7 +5329,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_26.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5353,7 +5355,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_27.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5371,7 +5373,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_27.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5397,7 +5399,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_28.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5415,7 +5417,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_28.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5441,7 +5443,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_29.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5459,7 +5461,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_29.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5485,7 +5487,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_30.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5503,7 +5505,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_30.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5529,7 +5531,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_31.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5547,7 +5549,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_31.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5573,7 +5575,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_32.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5591,7 +5593,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_32.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5617,7 +5619,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_33.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5635,7 +5637,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_33.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5661,7 +5663,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_34.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5679,7 +5681,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_34.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5705,7 +5707,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_35.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5723,7 +5725,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_4_35.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5758,7 +5760,7 @@ public class CafeteriaPOS {
 					     
 					}
 					total += price.get(btnNewButton_5_1.getText());
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					totalPrice.setText(String.valueOf(total));
 					
@@ -5775,7 +5777,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));			  
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(btnNewButton_5_1.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5801,7 +5803,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_2.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5819,7 +5821,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_2.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5845,7 +5847,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_3.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5863,7 +5865,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_3.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5889,7 +5891,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_4.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5907,7 +5909,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_4.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5933,7 +5935,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_5.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5950,7 +5952,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_5.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5976,7 +5978,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_6.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -5994,7 +5996,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_6.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6020,7 +6022,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_7.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6038,7 +6040,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_7.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6064,7 +6066,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_8.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6082,7 +6084,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_8.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6108,7 +6110,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_9.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6126,7 +6128,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_9.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6152,7 +6154,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_10.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6170,7 +6172,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_10.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6196,7 +6198,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_11.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6214,7 +6216,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_11.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6240,7 +6242,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_12.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6258,7 +6260,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_12.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6284,7 +6286,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_13.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6302,7 +6304,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_13.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6328,7 +6330,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_14.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6346,7 +6348,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_14.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6372,7 +6374,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_15.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6390,7 +6392,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_15.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6416,7 +6418,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_16.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6434,7 +6436,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_16.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6460,7 +6462,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_17.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6477,7 +6479,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_17.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6503,7 +6505,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_18.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6521,7 +6523,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_18.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6547,7 +6549,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_19.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6564,7 +6566,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_19.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6590,7 +6592,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_20.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6608,7 +6610,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_20.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6634,7 +6636,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_21.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6652,7 +6654,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_5_21.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6681,7 +6683,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_35.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6699,7 +6701,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_35.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6725,7 +6727,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_36.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6743,7 +6745,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_36.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6769,7 +6771,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_37.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6787,7 +6789,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_37.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6813,7 +6815,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_38.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6831,9 +6833,9 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
-					total += price.get(button_5_21.getText());
+					total += price.get(button_38.getText());
 					totalPrice.setText(String.valueOf(total));
 					}
 			}
@@ -6857,7 +6859,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_39.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6875,7 +6877,7 @@ public class CafeteriaPOS {
 					     ee = ee + String.format("%s\t%d %d\n", obj, map.get(obj), price.get(obj)*map.get(obj));
 					     
 					}
-					ee = ee + String.format("\n%s\n-----------------------------------------\n", date);
+					ee = ee + String.format("\nName: %s\nID: %s\n%s\n-----------------------------------------\n", name.getText(), id.getText(), date);
 					receiptArea.setText(ee);
 					total += price.get(button_39.getText());
 					totalPrice.setText(String.valueOf(total));
@@ -6940,6 +6942,8 @@ public class CafeteriaPOS {
 				total = 0;
 				price.clear();
 				map.clear();
+				name.setText("");
+				id.setText("");
 				
 			}
 			
@@ -6969,6 +6973,26 @@ public class CafeteriaPOS {
 		btnCalculate.setFont(new Font("Source Code Pro Light", Font.PLAIN, 13));
 		btnCalculate.setBounds(1141, 632, 123, 40);
 		frmEisCafeteriaPos.getContentPane().add(btnCalculate);
+		
+		name = new JTextField();
+		name.setBounds(578, 583, 185, 20);
+		frmEisCafeteriaPos.getContentPane().add(name);
+		name.setColumns(10);
+		
+		id = new JTextField();
+		id.setColumns(10);
+		id.setBounds(578, 613, 185, 20);
+		frmEisCafeteriaPos.getContentPane().add(id);
+		
+		JLabel nameLbl = new JLabel("Name");
+		nameLbl.setHorizontalAlignment(SwingConstants.TRAILING);
+		nameLbl.setBounds(522, 585, 37, 14);
+		frmEisCafeteriaPos.getContentPane().add(nameLbl);
+		
+		JLabel idLbl = new JLabel("ID");
+		idLbl.setHorizontalAlignment(SwingConstants.TRAILING);
+		idLbl.setBounds(522, 616, 37, 14);
+		frmEisCafeteriaPos.getContentPane().add(idLbl);
 		
 	
 		
